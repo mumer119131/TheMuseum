@@ -8,12 +8,6 @@ public class MainMenu : MonoBehaviour
 
     int levels_menu = 2;
     
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void transitionToLevelsMenu(){
 
         SceneManager.LoadScene(levels_menu);
@@ -23,6 +17,6 @@ public class MainMenu : MonoBehaviour
     public void exitGame(){
 
         Application.Quit();
-        
+
     }
 }
