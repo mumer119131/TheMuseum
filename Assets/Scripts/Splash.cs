@@ -7,13 +7,12 @@ public class Splash : MonoBehaviour
 {
 
     public float delayTime = 2.0f;
-    public string nextSceneName = "Level 1";
-
+    public int main_menu = 1;
     void Start(){
         Invoke("LoadSplash", delayTime);
     }
     // Update is called once per frame
     void LoadSplash(){
-        SceneManager.LoadScene(nextSceneName);
+        SceneManager.LoadScene(main_menu);
     }
 }
