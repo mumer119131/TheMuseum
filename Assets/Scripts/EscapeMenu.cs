@@ -7,9 +7,11 @@ public class EscapeMenu : MonoBehaviour
 {
     
     public GameObject popupPanel;
+    public GameObject cursorPanel;
 
     public void resumeGame(){
         popupPanel.SetActive(false);
+        cursorPanel.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
     }
 

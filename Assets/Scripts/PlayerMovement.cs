@@ -10,9 +10,12 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject popupPanel;
 
+    public GameObject cursorPanel;
+
     void Start(){
 
         popupPanel.SetActive(false);
+        cursorPanel.SetActive(true);
 
     }
 
@@ -36,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape)){
             Cursor.lockState = CursorLockMode.None;
             popupPanel.SetActive(true);
+            cursorPanel.SetActive(false);
         }
     }
 }
